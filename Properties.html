@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>العقارات - الشام للعقارات</title>
+    <h1>العقارات - الشام للعقارات</h1>
+    <script>
+      $(document).ready(function(){
+        $('#follow-button').click(function(){
+           $('#propertyForm').fadeToggle()
+        })
+      })
+    </script>
+
+    <style>
+        .details-row {
+            display: none;
+        }
+
+        .details-row.show {
+            display: table-row;
+        }
+        #propertyForm {
+      display: none; 
+    }
+    </style>
+</head>
+<body >
+    <button type="button" ><a href="AboutUS.html" id="goToPage2">AboutUS</a></button>
+    <script src="myFouctions.js"></script>  
+
+    <h1 class="h">العقارات</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>المدينة</th>
+                <th>التفاصيل</th>
+                <th>الإيجار الشهري</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>دمشق</td>
+                <td>شقة غرفة وصالة مساحة 70 م</td>
+                <td>500000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-1">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+                <tr class="details-row" id="details-row-1">
+                <td colspan="5">
+                  <div class="details" id="details-row-1">
+                    <p>المنطقة: ركن الدين</p>
+                    <p>متوفر كراج</p>
+                    <p>الطابق الثالث</p>
+                    <p>الملكية: طابو</p>
+                    <p>بلكون مساحة 12 متر</p>
+                    <p>مفروشة</p>
+                  </div>
+                </td>
+            <tr>
+                
+                <td>جمص</td>
+                <td>دكان مساحة 50 م</td>
+                <td>250000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-2">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-2">
+                <td colspan="5">
+                  <div class="details">
+                    <p>المنطقة: شارع رئيسي</p>
+                    <p>مناسب لعمل تجاري</p>
+                    <p>واجهات كبيرة</p>
+                  </div>
+                </td>
+              </tr>
+
+            <tr>
+                <td>دمشق</td>
+                <td>شقة فارغة غرفتين وصالة 110 م</td>
+                <td>600000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-3">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-3">
+                <td colspan="5">
+                  <div class="details">
+                    <p>المنطقة: المزة 86</p>
+                    <p>إطلالة مميزة</p>
+                    <p>بلكون واسع</p>
+                    <p>مصعد</p>
+                  </div>
+                </td>
+              </tr>
+            <tr>
+                <td>حلب</td>
+                <td>فيلا دوبلكس 5 غرف نوم حديقة</td>
+                <td>1500000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-4">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-4">
+                <td colspan="5">
+                  <div class="details">
+
+                    <p>المنطقة:  حي الزهراء</p>
+                    <p>حديقة خاصة</p>
+                    <p>مسبح خاص</p>
+                  </div>
+                </td>
+              </tr>
+
+            <tr>
+                <td>طرطوس</td>
+                <td>شاليه على البحر غرفة نوم واحدة</td>
+                <td>400000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-5">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-5">
+                <td colspan="5">
+                  <div class="details">
+
+                    <p>المنطقة:  بانياس</p>
+                    <p>واجهة مباشرة على البحر</p>
+                    <p>مفروش بالكامل</p>
+                  </div>
+                </td>
+              </tr>
+            <tr>
+
+                <td>اللاذقية</td>
+                <td>مكتب تجاري مساحة 80 م</td>
+                <td>300000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-6">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-6">
+                <td colspan="5">
+                  <div class="details">
+                    <p>المنطقة:  وسط المدينة</p>
+                    <p>مناسب لمختلف الأنشطة</p>
+                    <p>مكيف</p>
+                  </div>
+                </td>
+              </tr>
+
+            <tr>
+                <td>حمص</td>
+                <td>محل تجاري على شارع رئيسي</td>
+                <td>500000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-7">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-7">
+                <td colspan="5">
+                  <div class="details">
+                    <p>المنطقة:  باب تدمر</p>
+                    <p>مناسب لمختلف الأنشطة</p>
+                    <p>واجهة كبيرة</p>
+                  </div>
+                </td>
+              </tr>
+
+            <tr>
+                <td>السويداء</td>
+                <td>أرض زراعية مساحة 10 دونمات</td>
+                <td>2000000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-8">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-8">
+                <td colspan="5">
+                  <div class="details">
+                    <p>المنطقة:  سهل حوران</p>
+                    <p>خصبة ومناسبة للزراعة</p>
+                    <p>إمكانية بناء منزل</p>
+                  </div>
+                </td>
+              </tr>
+
+            <tr>
+                <td>درعا</td>
+                <td>بيت عربي قديم  قابل للترميم</td>
+                <td>1000000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-9">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-9">
+                <td colspan="5">
+                  <div class="details">
+
+                    <p>المنطقة:  درعا البلد</p>
+                    <p>قابل للترميم</p>
+                    <p>تاريخي</p>
+                  </div>
+                </td>
+              </tr>
+
+            <tr>
+                <td>ريف دمشق</td>
+                <td>فيلا مستقلة مع حديقة  مساحة 200 م</td>
+                <td>800000 ل.س</td>
+                <td><button class="details-button" data-target="details-row-10">إظهار التفاصيل</button></td>
+                <td><input type="checkbox"></td> 
+            </tr>
+            <tr class="details-row" id="details-row-10">
+                <td colspan="5">
+                  <div class="details">
+
+                    <p>المنطقة:  قطنا</p>
+                    <p>حديقة خاصة</p>
+                    <p>مسبح</p>
+                    <p>مفروشة</p>
+                  </div>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+    <script>
+        const detailsButtons = document.querySelectorAll('.details-button');
+
+        detailsButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetRowId = button.getAttribute('data-target');
+                const targetRow = document.getElementById(targetRowId);
+                targetRow.classList.toggle('show');
+            });
+        });
+    </script>
+
+    <button id="follow-button">متابعة</button> 
+        <form id="propertyForm">
+            <h2>تقديم طلب</h2>
+            <label for="fullName">الاسم الكامل (بالعربية):</label><br>
+            <input type="text" id="fullName" name="fullName"><br>
+            <label for="nationalID">الرقم الوطني (11 رقم):</label><br>
+            <input type="text" id="nationalID" name="nationalID" required><br>
+            <label for="birthDate">تاريخ الولادة (dd-mm-yyyy):</label><br>
+            <input type="text" id="birthDate" name="birthDate"><br>
+            <label for="mobileNumber">رقم الموبايل:</label><br>
+            <input type="text" id="mobileNumber" name="mobileNumber"><br>
+            <label for="email">الإيميل:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <div class="captcha-container">
+                <button class="captcha-button" onclick="refreshCaptcha()">Captcha</button>
+                <div class="captcha" id="captcha">ABC123</div>
+            </div>
+            <script>
+
+            
+    
+                function refreshCaptcha() {
+                    var newCaptcha = generateCaptcha();
+                     document.getElementById("captcha").innerText = newCaptcha ;
+                }
+                function generateCaptcha() {
+                    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                    var captcha = "";
+                
+                    for (var i = 0; i < 6; i++) {
+                        captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+                    }
+                    return captcha;
+                }
+                
+                document.addEventListener("DOMContentLoaded", function() {
+                    refreshCaptcha();
+                });
+                </script>
+             
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+    <script>
+    
+            const followButton = document.querySelector('.follow-button');
+            const propertyFormContainer = document.getElementById('propertyFormContainer');
+    
+            followButton.addEventListener('click', () => {
+                propertyFormContainer.style.display = 'block'; 
+            });
+        </script>
+          <div id="confirmationMessage" style="display:none;"></div> 
+          <script src="jquery-3.7.1.min.js"></script>
+
+          <script src="myFuoctions.js"></script>
+</body>
+</html>
+
+
+    
